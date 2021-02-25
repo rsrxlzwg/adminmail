@@ -1,0 +1,103 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul li{list-style-type:none;}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+.el-form-item {
+  margin-bottom: 10px;
+}
+ .el-table td, .el-table th {
+  padding: 10px 0 !important;
+}
+
+.el-card__body{
+  padding: 15px 20px !important;
+}
+fieldset{
+  border-radius: 3px;
+  padding: 10px 10px 0 !important;
+  border-color: #f2f2f2;
+  border-width: 1px;
+  margin-bottom: 15px !important;
+}
+.el-dialog__body{
+  padding: 30px 100px !important;
+}
+.el-dialog__header {
+  border-bottom: 1px solid #EBEEF5;
+}
+.el-table th>.cell{
+  color: rgb(32, 45, 64);
+  opacity: .5;
+  font-size: 12px;
+}
+
+.upload-demo{
+  display: flex;
+}
